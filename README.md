@@ -34,10 +34,10 @@ I will list the solution here and the explanations why
 
 <a name="erdanddiagrams"></a>
 ## ERD and Diagrams
-![Initial ERD](/images/initialERD.jpg)
-<a name="erd"></a>
 
+<a name="erd"></a>
 ### Initial Entity Relationship Diagrams
+![Initial ERD](/images/initialERD.jpg)
 
 Will put an image of my erd solution here
 
