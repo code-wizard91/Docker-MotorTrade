@@ -46,9 +46,11 @@ which will be used to log them into the website.
 ### Initial Entity Relationship Diagrams
 ![Initial ERD](/images/initialERD.jpg)
 
-Will put an image of my erd solution here
+## The ERD Diagram above was the initial structure, After careful consideration I decided that the table for posts is not needed
+and adds a level of difficulty that is not needed.
 
-Explanation of my ERD here
+* Instead I decided to create a table called Adverts that makes a more logical connection to my solution as the Users table will connect
+directly to the Adverts table (As users will create Adverts in which their cars will be posted)
 
 ### Final Entity Relationship Diagrams
 
@@ -84,7 +86,7 @@ Explain deployment etc jenkins, GitHub and put the diagram here
 * Testing - Selenium, Pytest
 * [Github Project](https://github.com/code-wizard91/Performance-Motors) - Version Control System
 * [Trello Board](https://trello.com/b/5RcaZXRp) - Project Tracking Board
-* Azure Cloud Services
+* Azure Services (SQL Server, Azure VM)
 
 <a name="frontend"></a>
 ## Front End Framework
