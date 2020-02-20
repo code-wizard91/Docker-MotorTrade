@@ -1,6 +1,6 @@
 ## Index
 [Brief](#brief)
-   * [My Solution](#mysol)
+   * [My Solution](#mysolution)
    
 [ERD and Diagrams](#erdanddiagrams)
    * [ERD](#erd)
@@ -23,11 +23,15 @@
 [Acknowledgements](#acknowledgements)
 
 <a name="brief"></a>
-## The Brief
+## The Product Brief
 
-To create an OOP-based application with utilisation of supporting tools, methodologies and technologies that encapsulate all core modules covered during training. The application must manipulate two tables with full CRUD functionality.
+To create:
+* OOP-based application
+* Utilisation of tools methodologies and technologies that encapsulate all core modules covered during training. 
+* The application must manipulate two tables
+* Application must have full CRUD functionality.
 
-<a name="mysol"></a>
+<a name="mysolution"></a>
 ### Solution
 
 I will list the solution here and the explanations why
