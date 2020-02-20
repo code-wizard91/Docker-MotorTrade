@@ -56,7 +56,9 @@ directly to the Adverts table (As users will create Adverts in which their cars 
 
 ### Final Entity Relationship Diagrams
 
-will put final image of erd and explanation here
+<a name="FinalErd"></a>
+### Final Entity Relationship Diagrams
+![Final ERD](/images/FinalErd.jpg)
 
 <a name="riskassess"></a>
 ## Risk Assessment
@@ -116,10 +118,7 @@ Explain deployment etc jenkins, GitHub and put the diagram here
 <a name="frontend"></a>
 ## Front End Framework
 ### Wireframes
-Poses
-![Poses Wireframe](/Documentation/Poses_Wireframe.png)
-Routines
-![Routines Wireframe](/Documentation/Routines_Wireframe.png)
+
 
 <a name="visrep"></a>
 ### Visual Representation of my Solution
