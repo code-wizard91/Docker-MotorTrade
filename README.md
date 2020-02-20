@@ -64,7 +64,7 @@ Will list all the testing methods I used here.
 <a name="riskassess"></a>
 ## Risk Assessment
 # MosCoW Prioritization
-![MosCow](/images/Requirements.jpg) ![Labels](/images/Labels.jpg)
+![MosCow](/images/reqs.jpg) ![Labels](/images/Labels.jpg)
 
 <a name="userstories"></a>
 ## User Stories
