@@ -4,6 +4,7 @@
    
 [ERD and Diagrams](#erdanddiagrams)
    * [Initial ERD](#erd)
+   * [Final ERD](#FinalErd)
    * [Risk Assessment](#riskassess)
    * [User Stories](#userstories)
    * [Trello Board Sprint 1](#spr1)
