@@ -82,7 +82,7 @@ The User Stories was also done on Trello, I listed all the use-cases for the pro
 
 Here is the First Sprint I did after defining the main requirements of the project. (Click image for higher quality image)
 
-![Labels](/images/Trello.jpg)
+![Trello Image](/images/Trello.jpg)
 
 <a name="testingmethod"></a>
 ## Testing Methodology
