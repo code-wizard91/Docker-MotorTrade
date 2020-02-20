@@ -34,6 +34,7 @@ I will list the solution here and the explanations why
 
 <a name="erdanddiagrams"></a>
 ## ERD and Diagrams
+![Initial ERD](/images/initialERD.jpg)
 <a name="erd"></a>
 
 ### Initial Entity Relationship Diagrams
@@ -62,20 +63,21 @@ Link to report here
 <a name="deploymentmethod"></a>
 ## Deployment
 
-Explain deployment etc jenkins, GitHub
+Explain deployment etc jenkins, GitHub and put the diagram here
 
 ![Deployment Pipeline](/Documentation/CI_pipeline.jpg)
+
 <a name="techused"></a>
-### List of Tech I used
+### List of Technologies Used
 
 * MySQL for Application Database
 * Python - Coding in Flask
 * Flask - Framework 
 * Jenkins - CI Server
 * Testing - Selenium, Pytest
-* [Git](https://github.com/ayshamarty/SoloProject.git) - VCS
-* [Trello](https://trello.com/qasoloproject) - Project Tracking
-* GCP - Live Environment
+* [Github Project](https://github.com/code-wizard91/Performance-Motors) - Version Control System
+* [Trello Board](https://trello.com/b/5RcaZXRp) - Project Tracking Board
+* Azure Cloud Services
 
 <a name="frontend"></a>
 ## Front End Framework
