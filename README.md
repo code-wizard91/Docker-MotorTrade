@@ -3,7 +3,7 @@
    * [My Solution](#mysolution)
    
 [ERD and Diagrams](#erdanddiagrams)
-   * [ERD](#erd)
+   * [Initial ERD](#erd)
    * [Risk Assessment](#riskassess)
    * [User Stories](#userstories)
    * [Trello Board Sprint 1](#spr1)
@@ -53,8 +53,6 @@ and adds furthur complexity to the project. (Click image for higher quality imag
 
 * Instead I decided to create a table called Adverts that makes a more logical connection to my solution as the Users table will connect
 directly to the Adverts table (As users will create Adverts in which their cars will be posted)
-
-### Final Entity Relationship Diagrams
 
 <a name="FinalErd"></a>
 ### Final Entity Relationship Diagrams
