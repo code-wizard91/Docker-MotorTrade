@@ -46,7 +46,7 @@ which will be used to log them into the website.
 ### Initial Entity Relationship Diagrams
 ![Initial ERD](/images/initialERD.jpg)
 
-## The ERD Diagram above was the initial structure, After careful consideration I decided that the table for posts is not needed
+The ERD Diagram above was the initial structure, After careful consideration I decided that the table for posts is not needed
 and adds a level of difficulty that is not needed.
 
 * Instead I decided to create a table called Adverts that makes a more logical connection to my solution as the Users table will connect
