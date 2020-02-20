@@ -49,7 +49,7 @@ which will be used to log them into the website.
 ![Initial ERD](/images/initialERD.jpg)
 
 The ERD Diagram above was the initial structure, After careful consideration I decided that the table for posts is not needed
-and adds furthur complexity to the project. Click image for higher quality image
+and adds furthur complexity to the project. (Click image for higher quality image)
 
 * Instead I decided to create a table called Adverts that makes a more logical connection to my solution as the Users table will connect
 directly to the Adverts table (As users will create Adverts in which their cars will be posted)
@@ -64,7 +64,7 @@ will put final image of erd and explanation here
 
 As seen below I have created a MosCoW Prioritisation list where all the requirements of the project are listed,
 I used a colour labelling method On Trello to make sure that each requirement had its own importance category.
-(Full Trello Board Later in the Document) Click image for higher quality image
+(Full Trello Board Later in the Document) (Click image for higher quality image)
 
 ![MosCow](/images/reqs.jpg) ![Labels](/images/Labels.jpg)
 
@@ -72,14 +72,14 @@ I used a colour labelling method On Trello to make sure that each requirement ha
 ## User Stories (Users and Developers)
 
 The User Stories was also done on Trello, I listed all the use-cases for the product in the perspective of a user and a developer.
-Click image for higher quality image 
+(Click image for higher quality image) 
 
 ![UserStories](/images/Userstories.jpg)
 
 <a name="spr1"></a>
 ## Trello Board (Sprint 1)
 
-Here is the First Sprint I did after defining the main requirements of the project.
+Here is the First Sprint I did after defining the main requirements of the project. (Click image for higher quality image)
 
 ![Labels](/images/Trello.jpg)
 
