@@ -5,6 +5,8 @@
 [ERD and Diagrams](#erdanddiagrams)
    * [ERD](#erd)
    * [Risk Assessment](#riskassess)
+   * [User Stories](#userstories)
+   * [Trello Board Sprint 1](#spr1)
 	
 [Testing Methadology](#testingmethod)
    * [Generated Report](#testingreport)
@@ -63,12 +65,25 @@ Will list all the testing methods I used here.
 
 <a name="riskassess"></a>
 ## Risk Assessment
-# MosCoW Prioritization
+# MosCoW Prioritization / Requirements / Product Backlog
+
+As seen below I have created a MosCoW Prioritisation list where all the requirements of the project are listed,
+I used a colour labelling method On Trello to make sure that each requirement had its own importance catagory.
+(Full Trello Board Later in the Document)
+
 ![MosCow](/images/reqs.jpg) ![Labels](/images/Labels.jpg)
 
 <a name="userstories"></a>
-## User Stories
+## User Stories (Users and Developers)
+
+The User Stories was also done on Trello, I listed all the use-cases for the product in the perspective of a user and a developer. 
+
 ![UserStories](/images/Userstories.jpg)
+
+<a name="spr1"></a>
+## Trello Board (Sprint 1)
+![Labels](/images/Trello.jpg)
+
 
 <a name="testingreport"></a>
 ### Testing Report
