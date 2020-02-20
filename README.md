@@ -14,7 +14,7 @@
      
 [Front End ](#frontend)
 
-[Front End ](#visrep)
+[Visual Representation of my Solution](#visrep)
 
 [Evaluation](#improve)
 
@@ -57,10 +57,7 @@ Will list all the testing methods I used here.
 <a name="testingreport"></a>
 ### Testing Report
 
-[Link to Final Surefire Report](/Documentation/Surefire_Report.pdf)
-
-Test coverage for the backend is at 84%, there are as of yet no working Selenium tests but hope to get these running soon.
-The SonarQube static report shows 9 code smells remaining, 0 bugs, 0 duplications and 0 vulnerabilities.
+Link to report here
 
 <a name="deploymentmethod"></a>
 ## Deployment
@@ -71,13 +68,11 @@ Explain deployment etc jenkins, GitHub
 <a name="techused"></a>
 ### List of Tech I used
 
-* H2 Database Engine - Database
-* Java - Logic
-* Wildfly - Deployment
+* MySQL for Application Database
+* Python - Coding in Flask
+* Flask - Framework 
 * Jenkins - CI Server
-* Maven - Dependency Management
-* Jacoco, EclEmma, Surefire - Test Reporting
-* SonarQube - Static Testing
+* Testing - Selenium, Pytest
 * [Git](https://github.com/ayshamarty/SoloProject.git) - VCS
 * [Trello](https://trello.com/qasoloproject) - Project Tracking
 * GCP - Live Environment
