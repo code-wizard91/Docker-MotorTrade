@@ -5,13 +5,10 @@
 /pycache/
 *.pyc
 /tests/__pycache__/*
-\venv\
+venv\
 \test/__pycache__\*
 \.pytest_cache
 \.cache
 \pycache/
 *.pyc
-\tests/__pycache__/*
-\tests/__pycache__
-\tests/__pycache__/
 
