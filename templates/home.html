@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block content %}
+	{% for post in posts %}
+		<h1>{{post.title}}</h1>
+		<p>Post created by {{post.user}} on {{post.datecreated}}</p>
+		<p>{{post.cardescription}}</p>
+		<p>Mileage : {{post.mileage}}</p>
+		<p>Location : {{post.location}}</p>
+		<p>Contact: {{post.location}}</p>
+		<p>Contact Number : {{post.contact}}</p>
+	{% endfor %}
+{% endblock content %}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	{% if title  %}
+
+		<title>Performance Motors - {{ title }} </title>
+
+	{% else %}
+		<title>{{ title }}</title>
+	{% endif %}
+
+</head>
+<body>
+
+	{% block content %}{% endblock %}
+
+</body>
+</html>
