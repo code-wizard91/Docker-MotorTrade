@@ -5,3 +5,11 @@
 /pycache/
 *.pyc
 /tests/__pycache__/*
+\venv\
+\test/__pycache__\*
+\.pytest_cache
+\.cache
+\pycache/
+*.pyc
+\tests/__pycache__/*
+
