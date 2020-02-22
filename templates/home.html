@@ -1,12 +1,28 @@
 {% extends 'layout.html' %}
 {% block content %}
 	{% for post in posts %}
-		<h1>{{post.title}}</h1>
-		<p>Post created by {{post.user}} on {{post.datecreated}}</p>
-		<p>{{post.cardescription}}</p>
-		<p>Mileage : {{post.mileage}}</p>
-		<p>Location : {{post.location}}</p>
-		<p>Contact: {{post.location}}</p>
-		<p>Contact Number : {{post.contact}}</p>
+		
+		<article class="media content-section">
+		  
+		    <div class="media-body">
+		   			 <div class="article-metadata">
+		   			 <br>
+		    		<div class="carimages">
+		    			<img width="100%" src={{post.imageurl}} "class="img-responsive" alt="Responsive image">
+		    		</div>
+		    		<br>
+		    		</div>
+				    <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+				    <a class="mr-2" href="#">{{ post.user }}</a>
+		    		<small class="text-muted">{{ post.datecreated }}</small>
+				    <p class="article-content">{{ post.cardescription }}</p>
+				     <p class="article-content">Car Mileage : {{ post.mileage }}</p>
+				      <p class="article-content">Car Location : {{ post.location }}</p>
+				      	<p class="article-content">Contact Number for {{post.user}} : {{ post.contact }}</p>
+		  	</div>
+
+		</article>
+
+
 	{% endfor %}
 {% endblock content %}
