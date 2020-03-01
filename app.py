@@ -2,18 +2,18 @@ from flask import Flask, render_template, url_for, flash, redirect
 from flask_sqlalchemy import SQLAlchemy
 from forms import RegistrationForm, LoginForm
 from datetime import datetime
-
+from flask_login import UserMixin
 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'fee323f72238c94ce34302364eb0b21a'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost/flaskapp'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://ali:password@localhost/flaskapp'
 db = SQLAlchemy(app)
 
 class Users(db.Model, UserMixin):
     user_id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(20), unique=True, nullable=False)
-    adv_id = db.Column(db.Integer, db.ForeignKey('adverts.adv_id'), nullable=False)
+    #adv_id = db.Column(db.Integer, db.ForeignKey('adverts.adv_id'), nullable=False)
     first_name = db.Column(db.String(30), nullable=False)
     last_name = db.Column(db.String(30), nullable=False)
     email = db.Column(db.String(120), nullable=False, unique=True)
@@ -22,7 +22,7 @@ class Users(db.Model, UserMixin):
     adverts = db.relationship('Adverts', backref='author', lazy=True)
 
     def __repr__(self):
-        return f"User('{self.username}','{self.email}','{self.profile_image}')"
+        return f"Users'{self.username}','{self.email}','{self.profile_image}')"
 		
 
 class Adverts(db.Model):
