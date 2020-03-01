@@ -30,11 +30,11 @@ class Adverts(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'), nullable=False)
     car_title = db.Column(db.String(100), nullable=False)
     car_descr = db.Column(db.Text, nullable=False)
-    price = db.Column(db.Float(), nullable=False)
-    mileage = db.Column(db.Integer, nullable=False)
+    price = db.Column(db.String(150), nullable=False)
+    mileage = db.Column(db.String(150), nullable=False)
     location = db.Column(db.String(300), nullable=False)
-    contact_no = db.Column(db.Integer, nullable=False)
-    image = db.Column(db.String(300), nullable=False)
+    contact_no = db.Column(db.String(15), nullable=False)
+    image = db.Column(db.String(20), nullable=False, default='default.jpg')
     date_adv = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
     def __repr__(self):
