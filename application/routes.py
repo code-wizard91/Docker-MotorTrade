@@ -120,3 +120,9 @@ def account():
         form.last_name.data = current_user.last_name
     image_file = url_for('static',filename = 'profileimage/' + current_user.profile_image)
     return render_template('account.html', title='Account',image_file=image_file, form=form)
+
+
+@app.route("/advert/new")
+@login_required
+def new_advert():
+    return render_template('create_advert.html', title='New Advert')
