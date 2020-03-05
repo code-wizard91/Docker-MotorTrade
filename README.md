@@ -55,7 +55,7 @@ which will be used to log them into the website.
 ![Initial ERD](/images/initialERD.jpg)
 
 The ERD Diagram above was the initial structure, After careful consideration I decided that the table for posts is not needed
-and adds furthur complexity to the project. (Click image for higher quality image)
+and adds furthur complexity to the project. (Click image for higher quality image).
 
 * Instead I decided to create a table called Adverts that makes a more logical connection to my solution as the Users table will connect
 directly to the Adverts table (As users will create Adverts in which their cars will be posted) The relationship here will be a 1 to Many as each user can have many adverts. 
