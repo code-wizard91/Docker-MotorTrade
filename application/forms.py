@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed
 from application.models import Users
-from wtforms import StringField, PasswordField, SubmitField, BooleanField
+from wtforms import StringField, PasswordField, SubmitField, BooleanField, TextAreaField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 from flask_login import current_user
 
@@ -52,3 +52,14 @@ class UpdateAccountForm(FlaskForm):
                 user = Users.query.filter_by(email = email.data).first()
                 if user:
                     raise ValidationError('Email is taken Please use a different one')
+
+
+class AdvertForm(FLaskForm):
+    title = StringField('Title', validators = [DataRequired()])
+    car_descr = TextAreaField('Content', validators = [DataRequired()])
+    price = StringField('Price', validators = [DataRequired(), Length(min=4, max=12)])
+    mileage = StringField('Mileage', validators = [DataRequired(), Length(min=0, max=20)])
+    location = StringField('Location (Postcode, City Etc)', validators = [DataRequired()])
+    contact_no = StringField('Contact Number', validators = [DataRequired(), Length(min=4, max=15)])
+    image = FileField('Update Profile Picture', validators=[FileAllowed(['jpg','png'])])
+    submit = SubmitField('Create Post')
