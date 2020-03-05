@@ -4,7 +4,7 @@ import secrets
 from application.models import Users, Adverts
 from application import app, db, bcrypt
 from flask import render_template, url_for, flash, redirect, request
-from application.forms import RegistrationForm, LoginForm, UpdateAccountForm
+from application.forms import RegistrationForm, LoginForm, UpdateAccountForm, AdvertForm
 from flask_login import login_user, current_user, logout_user, login_required
 
 posts = [
@@ -97,6 +97,15 @@ def save_picture(form_picture):
 
     return picture_fn
 
+def save_car_image(form_image):
+    random_hex = secrets.token_hex(8)
+    _, f_ext = os.path.splitext(form_image.filename)
+    image_fn = random_hex + f_ext
+    image_path = os.path.join(app.root_path, 'static/carimages', image_fn)
+    form_image.save(image_path)
+
+    return image_fn
+
 
 @app.route("/account", methods=['GET','POST'])
 @login_required
@@ -122,7 +131,18 @@ def account():
     return render_template('account.html', title='Account',image_file=image_file, form=form)
 
 
-@app.route("/advert/new")
+@app.route("/advert/new", methods=['GET','POST'])
 @login_required
 def new_advert():
-    return render_template('create_advert.html', title='New Advert')
+    form = AdvertForm()
+    if form.validate_on_submit():
+        if form.image.data:
+            image_file = save_car_image(form.image.data)
+            advert = Adverts(car_title=form.title.data, car_descr=form.car_descr.data, price=form.price.data, mileage = form.mileage.data, location = form.location.data, contact_no=form.contact_no.data, image = image_file)
+            db.session.add(advert)
+            db.session.commit()
+            flash('Your Advert Has Been Created! ','success')
+            return redirect(url_for('home'))
+        else:
+            flash('Sorry there was an error please try again','danger')
+    return render_template('create_advert.html', title='New Advert', form=form)

@@ -54,12 +54,12 @@ class UpdateAccountForm(FlaskForm):
                     raise ValidationError('Email is taken Please use a different one')
 
 
-class AdvertForm(FLaskForm):
-    title = StringField('Title', validators = [DataRequired()])
-    car_descr = TextAreaField('Content', validators = [DataRequired()])
-    price = StringField('Price', validators = [DataRequired(), Length(min=4, max=12)])
-    mileage = StringField('Mileage', validators = [DataRequired(), Length(min=0, max=20)])
-    location = StringField('Location (Postcode, City Etc)', validators = [DataRequired()])
-    contact_no = StringField('Contact Number', validators = [DataRequired(), Length(min=4, max=15)])
-    image = FileField('Update Profile Picture', validators=[FileAllowed(['jpg','png'])])
-    submit = SubmitField('Create Post')
+class AdvertForm(FlaskForm):
+        title = StringField('Title', validators = [DataRequired()])
+        car_descr = TextAreaField('Content', validators = [DataRequired()])
+        price = StringField('Price', validators = [DataRequired(), Length(min=4, max=12)])
+        mileage = StringField('Mileage', validators = [DataRequired(), Length(min=0, max=20)])
+        location = StringField('Location (Postcode, City Etc)', validators = [DataRequired()])
+        contact_no = StringField('Contact Number', validators = [DataRequired(), Length(min=4, max=15)])
+        image = FileField('Add Image', validators=[FileAllowed(['jpg','png'])])
+        submit = SubmitField('Create Post')
