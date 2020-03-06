@@ -1,9 +1,9 @@
 [Unit]
 Description=Flask Application
-[Service]]
+[Service]
 User=pythonadm
 WorkingDirectory=/opt/Performance-Motors
-ExecStart=/bin/bash \ 
+ExecStart=/bin/bash \
 	-c 'cd /opt/Performance-Motors && \
 	source ./venv/bin/activate && \
 	python ./app.py'
@@ -11,3 +11,4 @@ Environment=SECRET_KEY={{SECRET_KEY}}
 Environment=DATABASE_URI=mysql+pymysql://{{MYSQL_USER}}:{{MYSQL_PASSWORD}}@{{MYSQL_HOST}}/{{MYSQL_DATABASE}}
 [Install]
 WantedBy=multi-user.target
+
