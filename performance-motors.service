@@ -1,5 +1,5 @@
 [Unit]
-Description=Flask Application
+Description=Performance-Motors
 [Service]
 User=pythonadm
 WorkingDirectory=/opt/Performance-Motors
