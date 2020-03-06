@@ -138,7 +138,7 @@ def new_advert():
     if form.validate_on_submit():
         if form.image.data:
             image_file = save_car_image(form.image.data)
-            advert = Adverts(car_title=form.title.data, car_descr=form.car_descr.data, price=form.price.data, mileage = form.mileage.data, location = form.location.data, contact_no=form.contact_no.data, image = image_file)
+            advert = Adverts(user_id=1,car_title=form.title.data, car_descr=form.car_descr.data, price=form.price.data, mileage = form.mileage.data, location = form.location.data, contact_no=form.contact_no.data, image = image_file)
             db.session.add(advert)
             db.session.commit()
             flash('Your Advert Has Been Created! ','success')
