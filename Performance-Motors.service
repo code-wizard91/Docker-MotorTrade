@@ -1,10 +1,10 @@
 [Unit]
 Description=Flask Application
-[Service]
+[Service]]
 User=pythonadm
 WorkingDirectory=/opt/Performance-Motors
-ExecStart=/bin/bash \
-	-c 'cd /opt/flask-app && \
+ExecStart=/bin/bash \ 
+	-c 'cd /opt/Performance-Motors && \
 	source ./venv/bin/activate && \
 	python ./app.py'
 Environment=SECRET_KEY={{SECRET_KEY}}
