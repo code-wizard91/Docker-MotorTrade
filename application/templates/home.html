@@ -8,18 +8,18 @@
 		   			 <div class="article-metadata">
 		   			 <br>
 		    		<div class="carimages">
-		    			<img width="100%" src={{post.imageurl}} "class="img-responsive" alt="Responsive image">
+		    			<img width="100%" src={{post.image}} "class="img-responsive" alt="Responsive image">
 		    		</div>
 		    		<br>
 		    		</div>
-				    <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
-				    <a class="mr-2" href="#">{{ post.user }}</a>
-		    		<small class="text-muted">{{ post.datecreated }}</small>
-				    <p class="article-content">{{ post.cardescription }}</p>
+				    <h2><a class="article-title" href="#">{{ post.car_title }}</a></h2>
+				    <a class="mr-2" href="#">{{ post.user_id }}</a>
+		    		<small class="text-muted">{{ post.date_adv }}</small>
+				    <p class="article-content">{{ post.car_descr }}</p>
 				     <p class="article-content">Car Mileage : {{ post.mileage }}</p>
 				     <p class="article-content">Price : {{ post.price }}</p>
 				      <p class="article-content">Car Location : {{ post.location }}</p>
-				      	<p class="article-content">Contact Number for {{post.user}} : {{ post.contact }}</p>
+				      	<p class="article-content">Contact Number for {{post.contact_no}} : {{ post.contact }}</p>
 		  	</div>
 
 		</article>
