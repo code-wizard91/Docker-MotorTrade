@@ -13,7 +13,7 @@ class TestBase(TestCase):
         # pass in configurations for test database
         config_name = 'testing'
         app.config.update(
-            DATABASE_URI=str(os.getenv('DATABASE_URI'))        )
+            SQLALCHEMY_DATABASE_URI='mysql+pymysql://ali:password@localhost/flaskapp' )
         return app
 
     def setUp(self):
