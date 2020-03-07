@@ -3,7 +3,7 @@ import os
 import secrets
 from application.models import Users, Adverts
 from application import app, db, bcrypt
-from flask import render_template, url_for, flash, redirect, request
+from flask import render_template, url_for, flash, redirect, request, abort
 from application.forms import RegistrationForm, LoginForm, UpdateAccountForm, AdvertForm
 from flask_login import login_user, current_user, logout_user, login_required
 
@@ -118,5 +118,51 @@ def new_advert():
             flash('Your Advert Has Been Created! ','success')
             return redirect(url_for('home'))
         else:
-            flash('Sorry there was an error please try again','danger')
-    return render_template('create_advert.html', title='New Advert',form=form)
+            flash('Please Upload an Image','danger')
+    return render_template('create_advert.html', title='New Advert',form=form, legend = 'New Advert')
+
+@app.route("/advert/<int:adv_id>")
+def advert(adv_id):
+    advert = Adverts.query.get_or_404(adv_id)
+    return render_template('advert.html', title=advert.car_title, post=advert)
+
+@app.route("/advert/<int:adv_id>/update", methods=['GET','POST'])
+@login_required
+def update_advert(adv_id):
+    advert = Adverts.query.get_or_404(adv_id)
+    if advert.author != current_user:
+        abort(403)
+    form = AdvertForm()
+    if form.validate_on_submit():
+        if form.image.data:
+            image_file = save_car_image(form.image.data)
+            advert.image = image_file
+        advert.car_title = form.title.data
+        advert.car_descr = form.car_descr.data
+        advert.price = form.price.data
+        advert.mileage = form.mileage.data
+        advert.location = form.location.data
+        advert.contact_no = form.contact_no.data
+        db.session.commit()
+        flash('Your Advert Has Been Updated! ','success')
+        return redirect(url_for('advert',adv_id=advert.adv_id))
+    elif request.method == 'GET':
+        form.title.data = advert.car_title
+        form.car_descr.data = advert.car_descr
+        form.price.data = advert.price
+        form.mileage.data = advert.mileage
+        form.location.data = advert.location
+        form.contact_no.data = advert.contact_no
+        form.image.data = advert.image
+    return render_template('create_advert.html', title='Update Advert',form=form, legend = 'Update Advert')
+
+@app.route("/advert/<int:adv_id>/delete", methods=['POST'])
+@login_required
+def delete_advert(adv_id):
+    advert = Adverts.query.get_or_404(adv_id)
+    if advert.author != current_user:
+        abort(403)
+    db.session.delete(advert)
+    db.session.commit()
+    flash('Your Advert Has Been Deleted ','success')
+    return redirect(url_for('home'))

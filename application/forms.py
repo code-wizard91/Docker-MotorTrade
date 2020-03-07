@@ -62,4 +62,4 @@ class AdvertForm(FlaskForm):
         location = StringField('Location (Postcode, City Etc)', validators = [DataRequired()])
         contact_no = StringField('Contact Number', validators = [DataRequired(), Length(min=4, max=15)])
         image = FileField('Add Image', validators=[FileAllowed(['jpg','png'])])
-        submit = SubmitField('Create Post')
+        submit = SubmitField('Post')
