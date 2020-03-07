@@ -45,7 +45,7 @@ To create:
 I decided to create a website using Flask and Boostrap for the Front-End, the website is essentially a online marketplace where
 users can create Car Adverts that will take details such as; Images, Descriptions, Price, Mileage, Location and Phone numbers.
 Users will also have the ability to view cars for sale as well as update and delete their adverts. Users will have accounts 
-which will be used to log them into the website.
+which will be used to log them into the website..
 
 <a name="erdanddiagrams"></a>
 ## ERD and Diagrams
