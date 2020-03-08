@@ -4,8 +4,8 @@ import os
 from flask import abort, url_for, request
 from flask_testing import TestCase
 
-from application import app, db
-from application.models import Users, Adverts
+from application import *
+from application.models import *
 class TestBase(TestCase):
 
     def create_app(self):
