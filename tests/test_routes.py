@@ -52,21 +52,21 @@ class TestViews(TestBase):
         """
         Test that login is accessible without login
         """
-        response = self.client.get(url_for('login'))
+        response = self.client.get(url_for('/login'))
         self.assertEqual(response.status_code, 200)
 
     def test_register(self):
         """
         Test that Register is accessible without login
         """
-        response = self.client.get(url_for('register'))
+        response = self.client.get(url_for('/register'))
         self.assertEqual(response.status_code, 200)
 
     def test_about(self):
         """
         Test that About is accessible without login
         """
-        response = self.client.get(url_for('about'))
+        response = self.client.get(url_for('/about'))
         self.assertEqual(response.status_code, 200)
 
     def test_account(self):
@@ -74,7 +74,7 @@ class TestViews(TestBase):
         Test that account is not accesible unless logged in
         """
         response = self.client.get(url_for('account'))
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 302)
         
     def test_app(app):
         assert not app.debug, 'Ensure the app not in debug mode'
