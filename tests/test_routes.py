@@ -13,6 +13,7 @@ class TestBase(TestCase):
         # pass in configurations for test database
         config_name = 'testing'
         app.config.update(
+            SECRET_KEY='fee323f72238c94ce34302364eb0b21a',
             SQLALCHEMY_DATABASE_URI='mysql+pymysql://ali:password@localhost/flaskapp' )
         return app
 
@@ -49,5 +50,15 @@ class TestViews(TestBase):
         self.assertEqual(response.status_code, 200)
     
     def test_login(self):
+        response = self.client.get(url_for('login'))
+        self.assertEqual(response.status_code, 200)
+    
+    def test_register(self):
+        response = self.client.get(url_for('register'))
+        self.assertEqual(response.status_code, 200)
+    def test_about(self):
+        response = self.client.get(url_for('about'))
+        self.assertEqual(response.status_code, 200)
+    def test_advert(self):
         response = self.client.get(url_for('login'))
         self.assertEqual(response.status_code, 200)
