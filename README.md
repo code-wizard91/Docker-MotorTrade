@@ -129,7 +129,7 @@ Link to report here
 <a name="deploymentmethod"></a>
 ## Deployment
 
-![Deployment Pipeline](/Documentation/pipeline.jpg)
+![Deployment Pipeline](/images/pipeline.jpg)
 
 The Deployment pipeline for this Flask application was done using Git/Github for source control and automating that process using
 webhooks, the process would then go into automatically triggering testing using Pytest on a VM running Jenkins, Then Jenkins will
@@ -143,10 +143,10 @@ be triggered into the build/deployment process if the testing was successful, Je
 * Python - Coding in Flask
 * Flask - Framework 
 * Jenkins - CI Server
-* Testing - Selenium, Pytest
+* Testing - Pytest
 * [Github Project](https://github.com/code-wizard91/Performance-Motors) - Version Control System
 * [Trello Board](https://trello.com/b/5RcaZXRp) - Project Tracking Board
-* Azure Services (SQL Server, Azure VM)
+* Azure Services (MySQL Azure DB, Azure VM)
 
 <a name="frontend"></a>
 ## Front End Framework
