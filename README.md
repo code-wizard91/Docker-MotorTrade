@@ -101,7 +101,7 @@ Here is the First Sprint I did after defining the main requirements of the proje
 ## Trello Board (Sprint 2)
 
 You can see tasks from the first Sprint have been moved to the Done list and further tasks have been actioned and moved to the second Sprint stage.
-(Click image for higher quality image) 
+(Click image for higher quality image). 
 
 ![Sprint 2 Image](/images/sprint2.jpg)
 
