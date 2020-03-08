@@ -117,8 +117,9 @@ Most of the project requirements have been fullfilled at this point and the fina
 <a name="testingmethod"></a>
 ## Testing Methodology
 
-Will list all the testing methods I used here.
-
+Decided to use Pytest to create my tests, Mostly testing all my routes and request codes to see if everything was working correctly
+I automated the testing using Jenkins, making sure that the deployment would not go ahead unless the tests passed as the build/deploy
+process was a trigger I set up in Jenkins.
 
 <a name="testingreport"></a>
 ### Testing Report
@@ -128,9 +129,12 @@ Link to report here
 <a name="deploymentmethod"></a>
 ## Deployment
 
-Explain deployment etc jenkins, GitHub and put the diagram here
+![Deployment Pipeline](/Documentation/pipeline.jpg)
 
-![Deployment Pipeline](/Documentation/CI_pipeline.jpg)
+The Deployment pipeline for this Flask application was done using Git/Github for source control and automating that process using
+webhooks, the process would then go into automatically triggering testing using Pytest on a VM running Jenkins, Then Jenkins will
+be triggered into the build/deployment process if the testing was successful, Jenkins will then build and Deploy the app on a seperate VM (APP VM) on Azure. Also a seperate instance of Azures MySql will be used and connected to this VM for data storage.
+
 
 <a name="techused"></a>
 ### List of Technologies Used
