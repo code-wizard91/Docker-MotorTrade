@@ -40,10 +40,42 @@ class TestBase(TestCase):
         pass
 
 class TestViews(TestBase):
-
+    
     def test_home(self):
         """
         Test that homepage is accessible without login
         """
         response = self.client.get(url_for('home'))
         self.assertEqual(response.status_code, 200)
+
+    def test_login(self):
+        """
+        Test that login is accessible without login
+        """
+        response = self.client.get(url_for('login'))
+        self.assertEqual(response.status_code, 200)
+
+    def test_register(self):
+        """
+        Test that Register is accessible without login
+        """
+        response = self.client.get(url_for('register'))
+        self.assertEqual(response.status_code, 200)
+
+    def test_about(self):
+        """
+        Test that About is accessible without login
+        """
+        response = self.client.get(url_for('about'))
+        self.assertEqual(response.status_code, 200)
+
+    def test_account(self):
+        """
+        Test that account is not accesible unless logged in
+        """
+        response = self.client.get(url_for('account'))
+        self.assertEqual(response.status_code, 200)
+        
+    def test_app(app):
+        assert not app.debug, 'Ensure the app not in debug mode'
+
