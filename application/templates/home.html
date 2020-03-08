@@ -13,14 +13,13 @@
 		    		<br>
 		    		</div>
 
-				<h2><a class="article-title" href="{{ url_for('advert', adv_id=post.adv_id) }}">{{ post.car_title }}</a></h2>
+				<h2><a class="article-title" href="{{ url_for('advert', adv_id=post.adv_id) }}">{{ post.car_title }} : {{ post.price }}</a></h2>
 		    		<img class ="rounded-circle article-img" src="{{ url_for('static',filename='profileimage/'+post.author.profile_image) }}">
 				<a class="mr-2,mt-3" href="#">{{ post.author.username }}</a>
 				<small class="text-muted">Date Posted: {{ post.date_adv.strftime('%Y-%m-%d') }}</small>
 				<br><br>
-				     <h3 class="article-content">Car Mileage : {{ post.mileage }}</h3>
-				     <h3 class="article-content">Price : £{{ post.price }}</h3>
-				      <h3 class="article-content">Car Location : {{ post.location }}</h3>
+				     <p class="article-content">Car Mileage : {{ post.mileage }}</p>
+				      <p class="article-content">Car Location : {{ post.location }}</p>
 		  	</div>
 
 		</article>
