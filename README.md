@@ -13,7 +13,7 @@
    * [Trello Board Sprint 1.0](#spr1)
    * [Trello Board Sprint 2.0](#spr2)
    * [Trello Board Sprint 2.1 Continued...](#sprF)
-   * [Trello Board Sprint 2.1 Continued...](#sprFF)
+   * [Trello Board Completion Stage](#sprFF)
 	
 [Testing Methadology](#testingmethod)
    * [Generated Report](#testingreport)
