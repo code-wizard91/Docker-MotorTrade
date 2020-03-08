@@ -59,6 +59,21 @@ class TestViews(TestBase):
     def test_about(self):
         response = self.client.get(url_for('about'))
         self.assertEqual(response.status_code, 200)
+    def test_account(self):
+        """
+        testing to see if the website gives access to accounts page when not logged in
+        """
+        response = self.client.get(url_for('account'))
+        self.assertEqual(response.status_code, 302)
+    def test_NewAdv(self):
+        """
+        testing to see if the website gives access to create new advert page when not logged in, it should redirect
+        """
+        response = self.client.get(url_for('new_advert'))
+        self.assertEqual(response.status_code, 302)
     def test_advert(self):
-        response = self.client.get(url_for('login'))
-        self.assertEqual(response.status_code, 200)
+        """
+        testing to see if the website redirects when unlogged in users try to logout using /logout
+        """
+        response = self.client.get(url_for('logout'))
+        self.assertEqual(response.status_code, 302)
