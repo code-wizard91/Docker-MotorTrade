@@ -13,6 +13,7 @@
    * [Trello Board Sprint 1.0](#spr1)
    * [Trello Board Sprint 2.0](#spr2)
    * [Trello Board Sprint 2.1 Continued...](#sprF)
+   * [Trello Board Sprint 2.1 Continued...](#sprFF)
 	
 [Testing Methadology](#testingmethod)
    * [Generated Report](#testingreport)
@@ -112,7 +113,12 @@ Most of the project requirements have been fullfilled at this point and the fina
 
 ![Sprint 2 Continued..](/images/finalsprint.jpg)
 
+<a name="sprFF"></a>
+## Last Sprint to completion
 
+The project is now in the completion stage, all requirements have been met and optional features have been added, also some un-needed features were not implemented such as the search function and an additional DB table due to time restraints.
+
+![Completion..](/images/finishedsprint.jpg)
 
 <a name="testingmethod"></a>
 ## Testing Methodology
@@ -132,8 +138,7 @@ Link to report here
 ![Deployment Pipeline](/images/pipeline.jpg)
 
 The Deployment pipeline for this Flask application was done using Git/Github for source control and automating that process using
-webhooks, the process would then go into automatically triggering testing using Pytest on a VM running Jenkins, Then Jenkins will
-be triggered into the build/deployment process if the testing was successful, Jenkins will then build and Deploy the app on a seperate VM (APP VM) on Azure. Also a seperate instance of Azures MySql will be used and connected to this VM for data storage.
+webhooks, the process would then go into automatically triggering the testing phase which I did using Pytest on a VM running Jenkins, after the tests Jenkins will be triggered into the build/deployment process if the testing was successful, Jenkins will then build and Deploy the app on a seperate VM (APP VM) on Azure. Also a seperate instance of Azures MySql will be used and connected to this VM for data storage. (Click image for higher quality image) 
 
 
 <a name="techused"></a>
