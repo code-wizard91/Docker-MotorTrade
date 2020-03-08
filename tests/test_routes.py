@@ -47,3 +47,7 @@ class TestViews(TestBase):
         """
         response = self.client.get(url_for('home'))
         self.assertEqual(response.status_code, 200)
+    
+    def test_login(self):
+        response = self.client.get(url_for('login'))
+        self.assertEqual(response.status_code, 200)
