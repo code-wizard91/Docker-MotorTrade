@@ -47,7 +47,3 @@ class TestViews(TestBase):
         """
         response = self.client.get(url_for('home'))
         self.assertEqual(response.status_code, 200)
-        
-    def test_app(app):
-        assert not app.debug, 'Ensure the app not in debug mode'
-
