@@ -18,11 +18,9 @@
 				<a class="mr-2,mt-3" href="#">{{ post.author.username }}</a>
 				<small class="text-muted">Date Posted: {{ post.date_adv.strftime('%Y-%m-%d') }}</small>
 				<br><br>
-				    <p class="article-content">{{ post.car_descr }}</p>
-				     <p class="article-content">Car Mileage : {{ post.mileage }}</p>
-				     <p class="article-content">Price : £{{ post.price }}</p>
-				      <p class="article-content">Car Location : {{ post.location }}</p>
-				      	<p class="article-content">Contact Number for {{post.contact_no}} : {{ post.contact }}</p>
+				     <h3 class="article-content">Car Mileage : {{ post.mileage }}</h3>
+				     <h3 class="article-content">Price : £{{ post.price }}</h3>
+				      <h3 class="article-content">Car Location : {{ post.location }}</h3>
 		  	</div>
 
 		</article>

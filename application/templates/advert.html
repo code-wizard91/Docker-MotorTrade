@@ -3,7 +3,6 @@
 
 
 		<article class="media content-section">
-		<img class ="rounded-circle article-img" src="{{ url_for('static',filename='profileimage/'+post.author.profile_image) }}">
 		    <div class="media-body">
 		   			 <div class="article-metadata">
 		   			 <br>
@@ -13,6 +12,7 @@
 		    		<br>
 		    		</div>
 				    <h2 class="article-title">{{ post.car_title }}</h2>
+				    <img class ="rounded-circle article-img" src="{{ url_for('static',filename='profileimage/'+post.author.profile_image) }}">
 				    {% if post.author == current_user %}
 				    	<div>
 					  <a class="btn btn-secondary btn-sm m-1" href="{{ url_for('update_advert', adv_id = post.adv_id) }}">Update</a>
