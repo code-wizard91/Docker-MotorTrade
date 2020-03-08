@@ -93,7 +93,7 @@ The User Stories was also done on Trello, I listed all the use-cases for the pro
 <a name="spr1"></a>
 ## Trello Board (Sprint 1)
 
-Here is the First Sprint I did after defining the main requirements of the project. (Click image for higher quality image)
+Here is the First Sprint I did after defining the main requirements of the project. (Click image for higher quality image).
 
 ![Trello Image](/images/Trello.jpg)
 
