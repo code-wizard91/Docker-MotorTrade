@@ -1,7 +1,7 @@
 import unittest
 import os
 
-from flask import abort, url_for
+from flask import abort, url_for, request
 from flask_testing import TestCase
 
 from application import app, db
@@ -52,21 +52,21 @@ class TestViews(TestBase):
         """
         Test that login is accessible without login
         """
-        response = self.client.get(url_for('/login'))
+        response = self.client.get(url_for('login'))
         self.assertEqual(response.status_code, 200)
 
     def test_register(self):
         """
         Test that Register is accessible without login
         """
-        response = self.client.get(url_for('/register'))
+        response = self.client.get(url_for('register'))
         self.assertEqual(response.status_code, 200)
 
     def test_about(self):
         """
         Test that About is accessible without login
         """
-        response = self.client.get(url_for('/about'))
+        response = self.client.get(url_for('about'))
         self.assertEqual(response.status_code, 200)
 
     def test_account(self):
