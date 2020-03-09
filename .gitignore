@@ -1,11 +1,10 @@
 /venv/*
-/tests/*
 /__pycache__/*
 /.pytest_cache
 /.cache
 /pycache/
 *.pyc
 /tests/__pycache__/*
-/tests/
-/home/mizan/Performance-Motors/tests
+/images/
+/images
 
