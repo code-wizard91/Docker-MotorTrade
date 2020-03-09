@@ -185,6 +185,14 @@ Here is the actual test and building process taking place.
 
 ![Register Page](/images/visrep5.jpg)
 
+### Registering New User
+
+![Register new user](/images/visrep11.jpg)
+
+### User Registered!
+
+![Register new user](/images/visrep12.jpg)
+
 ### Logging in
 
 ![Uer Logging In](/images/visrep6.jpg)
