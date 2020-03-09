@@ -128,11 +128,18 @@ I automated the testing using Jenkins, making sure that the deployment would not
 process was a trigger I set up in Jenkins.
 
 <a name="testingreport"></a>
-### Testing Report
+### Testing Report (Pytest Generated HTML)
 
-Below is the HTML Coverage Report that was generated after the automated testing completed which was done using Jenkins, also after the testing was complete the file was moved to the test_results folder which is also can be found on my github repo here(https://github.com/code-wizard91/Performance-Motors/blob/master/test_results/index.html)
+Below is the HTML Coverage Report that was generated after the automated testing completed which was done using Jenkins, also after the testing was complete the file was moved to the test_results folder which is also can be found on my github repo [here](https://github.com/code-wizard91/Performance-Motors/blob/master/test_results/index.html)
 
 ![HTML Coverage Report](/images/coveragereport.jpg)
+
+### Testing Report (Generated after automated Jenkins Test)
+
+Here is the coverage report which was generated on Jenkins after the automated Testing took place. You can also see that it triggers the build/deployment process if the tests pass and sends out a notification on Slack.
+
+![Jenkins Coverage Report](/images/cov2.jpg)
+
 
 <a name="deploymentmethod"></a>
 ## Deployment
@@ -140,7 +147,8 @@ Below is the HTML Coverage Report that was generated after the automated testing
 ![Deployment Pipeline](/images/pipeline.jpg)
 
 The Deployment pipeline for this Flask application was done using Git/Github for source control and automating that process using
-webhooks, the process would then go into automatically triggering the testing phase which I did using Pytest on a VM running Jenkins, after the tests Jenkins will be triggered into the build/deployment process if the testing was successful, Jenkins will then build and Deploy the app on a seperate VM (APP VM) on Azure. Also a seperate instance of Azures MySql will be used and connected to this VM for data storage. (Click image for higher quality image) 
+webhooks with Jenkins, the process would then go into automatically triggering the testing phase which I did using Pytest on a VM running Jenkins, after the tests Jenkins will be triggered into the build/deployment process if the testing was successful, Jenkins will then build and Deploy the app on a seperate VM (APP VM) on Azure. Also a seperate instance of Azures MySql will be used and connected to this VM for data storage. (Click image for higher quality image) 
+
 
 
 <a name="techused"></a>
