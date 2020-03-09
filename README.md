@@ -165,8 +165,6 @@ webhooks with Jenkins, the process would then go into automatically triggering t
 
 <a name="frontend"></a>
 ## Front End Framework
-### Wireframes
-
 
 <a name="visrep"></a>
 ### Visual Representation of my Solution
