@@ -20,12 +20,10 @@
      
 [My Deployment Method](#deploymentmethod)
    * [What I used](#techused)
-     
-[Front End ](#frontend)
 
 [Visual Representation of my Solution](#visrep)
 
-[Evaluation](#improve)
+[Retrospective](#improve)
 
 [Authors](#authorsinv)
 
@@ -166,16 +164,57 @@ Here is the actual test and building process taking place.
 * [Trello Board](https://trello.com/b/5RcaZXRp) - Project Tracking Board
 * Azure Services (MySQL Azure DB, Azure VM)
 
-<a name="frontend"></a>
-## Front End Framework
-
 <a name="visrep"></a>
-### Visual Representation of my Solution
+### Front End Visual Representation of my Solution
+
+### Homepage
+
+![HomePage](/images/visrep1.jpg)
+
+### View Advert (Clicked into)
+![Advert View](/images/visrep2.jpg)
+
+### Abouts Page
+![Abouts Page](/images/visrep3.jpg)
+
+### Login Page
+
+![Login Page](/images/visrep4.jpg)
+
+### Register Page
+
+![Register Page](/images/visrep5.jpg)
+
+### Logging in
+
+![Uer Logging In](/images/visrep6.jpg)
+
+### User Logged in
+
+![User Logged In](/images/visrep7.jpg)
+
+### Viewing User created Ad (Users can only edit and update their own ads)
+
+![User Ad view](/images/visrep8.jpg)
+
+### Accounts Page (Users can only see this if they are logged in
+
+![Accounts Page](/images/visrep9.jpg)
+
+### Create Adverts Page
+
+![Create Ad Page](/images/visrep10.jpg)
 
 <a name="evaluation"></a>
-## Evaluation and Retrospect
+## Retrospect
 
-Add Evaluation here
+Creating this application in an Agile way allowed me to understand and appreciate the benefits of this way of Project Mangement, I also enjoyed the process of putting Agile techniques into how the project was managed using Sprints, Product backlogs etc. Also using the CI/CD way of developing software played a key part in the success of this project as it allowed me to use tools such as Pycharm for testing and Jenkins to Automate the process that links everything together. I was also very happy with the way I was able to use Azure VMs (1 for Jenkins and 1 for the App) to split up processes that normally would happen on a single VM thus allowing for increased durability and extra contingencies to manage risk. The way the application was deployed using Jenkins and how a seperate Azure managed DB worked together was very satisfying to see as the end result was a process that had become very robust and impressive.
+
+I faced many issues along the way, as I was learning the technologies whilst applying them but this ended up making the learning easier as I was able to fail fast and learn faster. 
+
+If I had to go back and change something I would improve the front end functionality more and add furthur features such as search filters and also a Gallery feature so users can upload more than one image.
+
+All together the project was a success and I would definitely use these technologies again in the future.
 
 <a name="authorsinv"></a>
 ## Authors
@@ -185,4 +224,4 @@ Mahboob Ali
 <a name="acknowledgements"></a>
 ## Acknowledgements
 
-* Honorable mentions
+* Jay Grindrod - A true motivation, he helped me in far too many ways to list here, Inspired me to push hard and learn things that were beyond the scope of what I needed to acheive. Thanks for your help Jay!
