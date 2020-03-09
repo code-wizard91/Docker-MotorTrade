@@ -130,7 +130,9 @@ process was a trigger I set up in Jenkins.
 <a name="testingreport"></a>
 ### Testing Report
 
-Link to report here
+Below is the HTML Coverage Report that was generated after the automated testing completed which was done using Jenkins, also after the testing was complete the file was moved to the test_results folder which is also can be found on my github repo here(https://github.com/code-wizard91/Performance-Motors/blob/master/test_results/index.html)
+
+![HTML Coverage Report](/images/coveragereport.jpg)
 
 <a name="deploymentmethod"></a>
 ## Deployment
