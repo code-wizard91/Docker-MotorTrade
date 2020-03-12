@@ -1,0 +1,32 @@
+version: "3.7"
+services:
+  performance-motors:
+    image: alimizan/performance-motors
+    build: .
+    networks:
+      - app
+    ports:
+      - target: 5000
+        published: 5000
+    depends_on:
+      - performance-motors-db
+    environment:
+      - DATABASE_URI=mysql+pymysql://root:${rootpass}@performance-motors-db/flaskapp    
+  performance-motors-db:
+    image: mysql:8.0.17
+    networks:
+      - app
+    ports:
+      - target: 3306
+        published: 3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=${rootpass}
+      - MYSQL_DATABASE=flaskapp
+    volumes:
+      - type: volume
+        source: flasksql
+        target: /var/liv/mysql
+networks:
+  app:
+volumes:
+  flasksql:
