@@ -11,21 +11,23 @@ services:
     depends_on:
       - performance-motors-db
     environment:
-      - DATABASE_URI=mysql+pymysql://root:${rootpass}@performance-motors-db/flaskapp    
+      - DATABASE_URI=mysql+pymysql://root:password@performance-motors-db/flaskapp
+      - SECRET_KEY=akjdss
   performance-motors-db:
-    image: mysql:8.0.17
+    image: mysql:latest
+    container_name: performance-motors-db
     networks:
       - app
     ports:
       - target: 3306
         published: 3306
     environment:
-      - MYSQL_ROOT_PASSWORD=${rootpass}
+      - MYSQL_ROOT_PASSWORD=password
       - MYSQL_DATABASE=flaskapp
     volumes:
       - type: volume
         source: flasksql
-        target: /var/liv/mysql
+        target: /var/lib/mysql
 networks:
   app:
 volumes:
