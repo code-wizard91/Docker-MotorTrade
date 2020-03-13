@@ -21,6 +21,6 @@ CREATE TABLE IF NOT EXISTS `Adverts` (
 	`contact_no` varchar(255),
 	`image` varchar(255),
 	`date_adv` datetime,
-	PRIMARY KEY ( `adv_id` )
+	PRIMARY KEY ( `adv_id` ),
 	FOREIGN KEY (user_id) REFERENCES Users(user_id)
 );
