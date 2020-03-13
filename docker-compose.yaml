@@ -11,11 +11,11 @@ services:
     depends_on:
       - performance-motors-db
     environment:
-      - DATABASE_URI=mysql+pymysql://root:password@performance-motors-db/flaskapp
+      - DATABASE_URI=mysql+pymysql://root:password@performancedb/flaskapp
       - SECRET_KEY=akjdss
   performance-motors-db:
-    image: mysql:latest
-    container_name: performance-motors-db
+    image: alimizan/performancedb
+    container_name: performancedb
     networks:
       - app
     ports:
