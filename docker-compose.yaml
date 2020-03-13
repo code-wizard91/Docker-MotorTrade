@@ -14,7 +14,7 @@ services:
       - DATABASE_URI=mysql+pymysql://root:password@performancedb/flaskapp
       - SECRET_KEY=akjdss
   performance-motors-db:
-    image: alimizan/performancedb
+    image: mysql:latest
     container_name: performancedb
     networks:
       - app
