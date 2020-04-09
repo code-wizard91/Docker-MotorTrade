@@ -27,7 +27,7 @@ services:
     volumes:
       - type: volume
         source: flasksql
-        target: /var/lib/mysql
+        target: /var/lib/mysql 
 networks:
   app:
 volumes:
