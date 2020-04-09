@@ -237,6 +237,7 @@ Mahboob Ali
 
 * Jay Grindrod - A true motivation, he helped me in far too many ways to list here, Inspired me to push hard and learn things that were beyond the scope of what I needed to acheive. Thanks for your help Jay!
 
+<a name="install"></a>
 ## How to Run this App using Docker-Compose
 
 - Step 1:
