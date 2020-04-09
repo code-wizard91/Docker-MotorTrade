@@ -246,15 +246,8 @@ Make sure you have the port 5000 open on your pc.
 
 - Step 2: 
 
-Git Clone this repository and from inside the repository run "docker-compose up -d"
+--Git Clone this repository
+--From inside the repository run "docker-compose up -d"
 
-- Step 3 
-
-- You will now have 2 running containers, run "docker ps" to confirm, remember the name of the container
-
-- run the following command to access the container shell, replace the "#your_app_name#" with the name of the container 
-  ( docker exec -it #your_app_name# bash )
-  
-- Once you are in run python create.py
 
 ## The app is now running on your localhost on port 5000
