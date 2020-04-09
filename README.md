@@ -29,6 +29,9 @@
 
 [Acknowledgements](#acknowledgements)
 
+
+[How To Install](#install)
+
 <a name="brief"></a>
 ## The Product Brief
 
@@ -233,3 +236,25 @@ Mahboob Ali
 ## Acknowledgements
 
 * Jay Grindrod - A true motivation, he helped me in far too many ways to list here, Inspired me to push hard and learn things that were beyond the scope of what I needed to acheive. Thanks for your help Jay!
+
+## How to Run this App using Docker-Compose
+
+- Step 1:
+
+Get Docker and Docker-Compose set up on your Machine. (I used Linux)
+Make sure you have the port 5000 open on your pc.
+
+- Step 2: 
+
+Git Clone this repository and from inside the repository run "docker-compose up -d"
+
+- Step 3 
+
+- You will now have 2 running containers, run "docker ps" to confirm, remember the name of the container
+
+- run the following command to access the container shell, replace the "#your_app_name#" with the name of the container 
+  ( docker exec -it #your_app_name# bash )
+  
+- Once you are in run python create.py
+
+## The app is now running on your localhost on port 5000
