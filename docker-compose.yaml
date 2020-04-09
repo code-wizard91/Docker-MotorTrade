@@ -15,6 +15,7 @@ services:
       - SECRET_KEY=akjdss
   performance-motors-db:
     image: mysql:latest
+    build: ./performance_db/
     container_name: performancedb
     networks:
       - app
