@@ -247,8 +247,8 @@ Make sure you have the port 5000 open on your pc.
 
 - Step 2: 
 
---Git Clone this repository
---From inside the repository run "docker-compose up -d"
+Git Clone this repository
+From inside the repository run "docker-compose up -d"
 
 
 ## The app is now running on your localhost on port 5000
