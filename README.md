@@ -243,11 +243,13 @@ Mahboob Ali
 - Step 1:
 
 Get Docker and Docker-Compose set up on your Machine. (I used Linux)
+
 Make sure you have the port 5000 open on your pc.
 
 - Step 2: 
 
 Git Clone this repository
+
 From inside the repository run "docker-compose up -d"
 
 
