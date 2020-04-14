@@ -12,15 +12,15 @@ CREATE TABLE Users(
 
 CREATE TABLE Adverts (
     adv_id int(10) NOT NULL auto_increment,
-    user_id int(10),
-    car_title varchar(255),
-    car_descr varchar(255),
-    price varchar(255),
-    mileage varchar(255),
-    location varchar(255),
-    contact_no varchar(255),
-    image varchar(255),
-    date_adv datetime,
+    user_id int(10) NOT NULL,
+    car_title varchar(255) NOT NULL,
+    car_descr varchar(255) NOT NULL,
+    price varchar(255) NOT NULL,
+    mileage varchar(255) NOT NULL,
+    location varchar(255) NOT NULL,
+    contact_no varchar(255) NOT NULL,
+    image varchar(255) NOT NULL,
+    date_adv datetime NOT NULL,
     PRIMARY KEY (adv_id),
     FOREIGN KEY (user_id) REFERENCES Users(user_id)
 );
