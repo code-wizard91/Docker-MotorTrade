@@ -1,26 +1,24 @@
 CREATE DATABASE flaskapp;
-CREATE TABLE Users(
-    user_id int(10) NOT NULL auto_increment,
-    username varchar(255) NOT NULL,
-    first_name varchar(255) NOT NULL,
-    last_name varchar(255) NOT NULL,
-    email varchar(255) NOT NULL,
-    password varchar(255) NOT NULL,
-    profile_image varchar(255) NOT NULL DEFAULT 'default.jpg',
-    PRIMARY KEY(user_id)
+CREATE TABLE flaskapp.users(
+    user_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    profile_image VARCHAR(255) NOT NULL DEFAULT 'default.jpg',
 );
 
-CREATE TABLE Adverts (
-    adv_id int(10) NOT NULL auto_increment,
-    user_id int(10) NOT NULL,
-    car_title varchar(255) NOT NULL,
-    car_descr varchar(255) NOT NULL,
-    price varchar(255) NOT NULL,
-    mileage varchar(255) NOT NULL,
-    location varchar(255) NOT NULL,
-    contact_no varchar(255) NOT NULL,
-    image varchar(255) NOT NULL,
-    date_adv datetime NOT NULL,
-    PRIMARY KEY (adv_id),
-    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+CREATE TABLE flaskapp.adverts (
+    adv_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    user_id INTEGER NOT NULL,
+    car_title VARCHAR(255) NOT NULL,
+    car_descr VARCHAR(255) NOT NULL,
+    price VARCHAR(255) NOT NULL,
+    mileage VARCHAR(255) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    contact_no VARCHAR(255) NOT NULL,
+    image VARCHAR(255) NOT NULL,
+    date_adv DATETIME NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
