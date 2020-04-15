@@ -9,7 +9,7 @@ CREATE table flaskapp.users(
     profile_image VARCHAR(255) NOT NULL DEFAULT 'default.jpg',
 );
 
-CREATE table flaskapp.adverts (
+CREATE table flaskapp.adverts(
     adv_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
     user_id INTEGER NOT NULL,
     car_title VARCHAR(255) NOT NULL,
