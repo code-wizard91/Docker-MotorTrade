@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: performance-motors
+spec:
+  selector:
+    app: performance-motors
+  ports: 
+  - protocol: TCP
+    port: 5000
+    targetPort: 5000
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: performance-motors
+  labels:
+    app: performance-motors
+spec:
+  selector:
+    matchLabels:
+      app: performance-motors
+  template:
+    metadata:
+      labels:
+        app: performance-motors
+    spec:
+      containers:
+      - name: performance-motors
+        image: alimizan/performance-motors
+        ports:
+        - containerPort: 5000
+        env:
+        - name: DATABASE_URI
+          value: "mysql+pymysql://root:password@performancedb/flaskapp"
+        - name: SECRET_KEY
+          value: "akjdss"  
