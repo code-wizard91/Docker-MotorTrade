@@ -1,4 +1,3 @@
-CREATE DATABASE flaskapp;
 CREATE table flaskapp.users(
     user_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL,
