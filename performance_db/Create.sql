@@ -1,4 +1,4 @@
-CREATE table flaskapp.users(
+CREATE TABLE users(
   user_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, 
   username VARCHAR(50) NOT NULL, 
   first_name VARCHAR(50) NOT NULL, 
@@ -7,7 +7,7 @@ CREATE table flaskapp.users(
   password VARCHAR(255) NOT NULL, 
   profile_image VARCHAR(255) NOT NULL DEFAULT 'default.jpg', 
   );
-CREATE table flaskapp.adverts(
+CREATE TABLE adverts(
   adv_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, 
   user_id INTEGER NOT NULL, 
   car_title VARCHAR(255) NOT NULL, 
