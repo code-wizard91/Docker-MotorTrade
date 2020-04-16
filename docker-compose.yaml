@@ -24,7 +24,6 @@ services:
         published: 3306
     environment:
       - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=flaskapp
     volumes:
       - type: volume
         source: flasksql
