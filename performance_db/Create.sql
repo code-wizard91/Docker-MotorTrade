@@ -5,7 +5,7 @@ CREATE TABLE users(
   last_name varchar(255) NOT NULL, 
   email varchar(255) NOT NULL, 
   password varchar(255) NOT NULL, 
-  profile_image varchar(255) NOT NULL DEFAULT 'default.jpg',
+  profile_image varchar(255) DEFAULT 'default.jpg',
   PRIMARY KEY (user_id)
   );
 CREATE TABLE adverts(
@@ -19,6 +19,6 @@ CREATE TABLE adverts(
   contact_no varchar(255) NOT NULL, 
   image varchar(255) NOT NULL, 
   date_adv DATETIME NOT NULL, 
+  PRIMARY KEY (adv_id),
   FOREIGN KEY (user_id) REFERENCES users(user_id)
-  PRIMARY KEY(adv_id)
 );
