@@ -6,7 +6,7 @@ CREATE table flaskapp.users(
     last_name VARCHAR(50) NOT NULL,
     email VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,
-    profile_image VARCHAR(255) NOT NULL DEFAULT 'default.jpg',
+    profile_image VARCHAR(255) NOT NULL DEFAULT 'default.jpg'
 );
 
 CREATE table flaskapp.adverts(
