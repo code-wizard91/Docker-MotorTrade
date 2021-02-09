@@ -21,7 +21,6 @@
 [My Deployment Method](#deploymentmethod)
    * [What I used](#techused)
 
-[Visual Representation of my Solution](#visrep)
 
 [Retrospective](#improve)
 
@@ -166,55 +165,6 @@ Here is the actual test and building process taking place.
 * [Github Project](https://github.com/code-wizard91/Performance-Motors) - Version Control System
 * [Trello Board](https://trello.com/b/5RcaZXRp) - Project Tracking Board
 * Azure Services (MySQL Azure DB, Azure VM)
-
-<a name="visrep"></a>
-### Front End Visual Representation of my Solution
-
-### Homepage
-
-![HomePage](/images/visrep1.jpg)
-
-### View Advert (Clicked into)
-![Advert View](/images/visrep2.jpg)
-
-### Abouts Page
-![Abouts Page](/images/visrep3.jpg)
-
-### Login Page
-
-![Login Page](/images/visrep4.jpg)
-
-### Register Page
-
-![Register Page](/images/visrep5.jpg)
-
-### Registering New User
-
-![Register new user](/images/visrep11.jpg)
-
-### User Registered!
-
-![Register new user](/images/visrep12.jpg)
-
-### Logging in
-
-![Uer Logging In](/images/visrep6.jpg)
-
-### User Logged in
-
-![User Logged In](/images/visrep7.jpg)
-
-### Viewing User created Ad (Users can only edit and update their own ads)
-
-![User Ad view](/images/visrep8.jpg)
-
-### Accounts Page (Users can only see this if they are logged in
-
-![Accounts Page](/images/visrep9.jpg)
-
-### Create Adverts Page
-
-![Create Ad Page](/images/visrep10.jpg)
 
 <a name="evaluation"></a>
 ## Retrospect
