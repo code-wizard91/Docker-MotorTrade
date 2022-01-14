@@ -35,4 +35,4 @@ Werkzeug==0.16.1
 WTForms==2.2.1
 zipp==3.0.0
 zope.interface==4.7.1
-cryptography==3.2
+cryptography==3.3.2
